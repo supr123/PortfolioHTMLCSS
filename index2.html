@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   font-family: 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  /* background-color: #E8F9FF; */
+  background: linear-gradient(to bottom, #C4D9FF, #8e8e8e);
+  color: #333;
+}
+
+header {
+  background: #150097;
+  color: #FBFBFB;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+nav li {
+  transition: all 0.2s ease-in-out;
+}
+nav li:hover a {
+  color: #150097;
+  font-weight: bold;
+}
+
+nav li:hover{
+  background-color: #e6e6ff;
+  color: #150097;                  
+  border-radius: 20px;
+  padding: 2px 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+h3{
+  margin-top: 1rem;
+}
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 2rem auto;
+  /* background-color: #C4D9FF; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+   /* background: linear-gradient(to bottom, #C4D9FF, #9333ea); */
+   background-color: #E8F9FF;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease-in-out;
+     border-left: 4px solid #150097;
+  padding-left: 12px;
+}
+#i1{
+    width: 40%;
+    height: 30%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #150097;
+  font-size: 14px;
+  color: white;
+}
+footer p{
+  color: white;
+}
+.top-link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: white;
+  font-size: large;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wel{
+ display: flex;
+  flex-direction: row;
+}
+.wel img{
+  width: 2rem;
+  height: 20%;
+}
+header img{
+  width: 2rem;
+  height: 20%;
+  padding-top: 7px;
+}
+.icon{
+  width: 26px;
+  height: 28px;
+}
+.img{
+  width: 2rem;
+  height: 20%;
+ padding-top: 7px;
+}
+
+  p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+#contact {
+  text-align: center;
+  padding: 40px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+section:hover{
+  background-color: #e6e6ff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+   border-left: 4px solid #150097;
+  padding-left: 12px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .row, .wel, .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    padding: 20px 10px;
+    margin: 1rem 10px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  #i1 {
+    width: 80%;
+  }
+
+  .img, .icon {
+    width: 1.5rem;
+    height: auto;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .top-link {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="row">
+    <img src="employee.png" alt="employee" class="img">
+    <h1>Sup's Portfolio</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="wel">
+      <h2>Welcome</h2>
+      <img src="hello.png" alt="welcome" >
+    </div>
+    <p>Hi! I am Sup! I am a <b>Computer Science Engineer</b> by degree. To be honest, I am still figuring my things out umm I am stuck ... you can say that I guess. But let's not lose hope, the world is so huge there might still be some space left for me to fit in :).</p>
+    <img src="i1.png" alt="coder" id="i1">
+  </section>
+
+  <section id="about">
+    <div class="wel">
+    <h2>About Me </h2>
+    <img src="female.png" alt="teacher" class="img">
+    </div>
+    <p>I am a web developer. I create simple websites. I graduated during Covid hehe iykyk.... As I was saying, I somehow managed to get a Certification as a Full Stack Java Developer from a well known "Placement Providing Classes" .... But guess what? They didn't! While I was there, they offered lil' me the job of an Assistant Teacher! I rejected ofc as I thought more about myself back then, Crazy Times! </p>
+    <p>Taught them kids basics of Webpage Designing, Python Programming, C and Software Testing for a year, and now here I am trying to make it work somehow!</p>
+    
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>1. SproutWithSup – Plant Care Blog</h3>
+<p>A personal blog dedicated to plant care, inspired by my younger brother’s love for gardening. It features posts on plant tips, home gardening hacks, and mindful green living. Built using WordPress Free Features (It's work in progress tbh)</p>
+<iframe src="https://sproutwithsup.wordpress.com" width="100%" height="600px" width="100%" height="30vh"></iframe>
+<h3>
+  2.  UI/UX Projects (Figma + GitHub)
+</h3>
+<p>I’ve been exploring UI/UX design through hands-on projects.I'll be honest, I was just doing this because of curiosity. My designs are clones, I was just tryin' to replicate them (Clumsy Work tbh). View my designs and notes on GitHub.</p>
+<ul>
+  <li>
+    <strong>Coffee App UI Clone</strong>
+    <br>
+    Designed some of the screens by getting inspo on Pinterest.
+    <br>
+    <a href="https://github.com/supr123/Coffee-App-UI-Clone/tree/main" target="_blank">Coffee App UI</a>
+  </li>
+  <li>
+    <strong>Spotify Login Page UI Clone </strong>
+    <br>
+    This one is also a screen from Pinterest but I believe it is actually an old UI design of Spotify Login page.
+    <br>
+    <a href="https://github.com/supr123/spotifyuiclone" target="_blank">Spotify Login Screen</a>
+    
+  </li>
+  <li>
+    <strong>Zomato Website UI Clone</strong>
+    <br>
+    I tried to replicate the latest Zomato UI.
+    <br>
+    <a href="https://github.com/supr123/zomato-figma-design" target="_blank"> Zomato UI Clone</a>
+  </li>
+  
+</ul>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Me</h2>
+  <p>Let’s work together or just say hi!</p>
+  
+  <div class="contact-links">
+    <a href="mailto:yourname@gmail.com">
+      <img src="gmail.png" alt="Gmail icon" class="icon"> Email
+    </a>
+    <a href="https://github.com/supr123" target="_blank">
+      <img src="github.png" alt="GitHub icon" class="icon"> GitHub
+    </a>
+    <a href="https://www.linkedin.com/in/supriya-l-b27529201" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn icon" class="icon"> Linkedin
+    </a>
+  </div>
+</section>
+
+
+
+  <footer>
+     <p>© 2025 Your Name. All rights reserved.</p>
+  <p>Designed and built by Me using HTML & CSS</p>
+  <a href="#top" class="top-link">↑ Back to top</a>
+  </footer>
+
+</body>
+</html>
